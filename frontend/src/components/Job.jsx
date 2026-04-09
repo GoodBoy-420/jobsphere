@@ -58,15 +58,11 @@ const Job = ({ job }) => {
         return;
       }
 
-      console.log("Toggling bookmark for job:", job._id);
-
       const res = await axios.post(
         `${USER_API_END_POINT}/bookmarks/${job._id}`,
         {},
         { withCredentials: true },
       );
-
-      console.log("Bookmark toggle response:", res.data);
 
       if (res.data.success) {
         setIsBookmarked(!isBookmarked);
