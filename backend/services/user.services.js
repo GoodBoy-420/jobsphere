@@ -45,7 +45,10 @@ export const registerService = async (req) => {
       body: { message: "User created successfully", success: true },
     };
   } catch (error) {
-    return { statusCode: 500, body: { message: error.message, success: false } };
+    return {
+      statusCode: 500,
+      body: { message: error.message, success: false },
+    };
   }
 };
 
@@ -90,7 +93,7 @@ export const loginService = async (req) => {
       token,
       options: {
         maxAge: 1 * 24 * 60 * 60 * 1000,
-        httpsOnly: true,
+        httpOnly: true,
         sameSite: "strict",
       },
     };
@@ -110,7 +113,10 @@ export const loginService = async (req) => {
       body: { message: `Welcome back  ${user.fullname}`, user, success: true },
     };
   } catch (error) {
-    return { statusCode: 500, body: { message: error.message, success: false } };
+    return {
+      statusCode: 500,
+      body: { message: error.message, success: false },
+    };
   }
 };
 
@@ -121,7 +127,10 @@ export const logoutService = async () => {
       body: { message: "User logout successfully", success: true },
     };
   } catch (error) {
-    return { statusCode: 500, body: { message: error.message, success: false } };
+    return {
+      statusCode: 500,
+      body: { message: error.message, success: false },
+    };
   }
 };
 
@@ -175,6 +184,9 @@ export const updateProfileService = async (req) => {
       body: { message: "Profile updated successfully", user, success: true },
     };
   } catch (error) {
-    return { statusCode: 500, body: { message: error.message, success: false } };
+    return {
+      statusCode: 500,
+      body: { message: error.message, success: false },
+    };
   }
 };
