@@ -195,7 +195,7 @@ This project also improved my ability to break down complex features into manage
 - 💼 Full-Stack MERN Developer
 - 🌐 Portfolio: https://goodboy-420.github.io/portfolio/
 - 🔗 LinkedIn: https://linkedin.com/in/md-redwan-islam/
-- 📧 Email: 📧 Email: [riadislam9117@gmail.com](mailto:riadislam9117@gmail.com?subject=Regarding%20JobSphere%20Project)
+- 📧 Email: [riadislam9117@gmail.com](mailto:riadislam9117@gmail.com?subject=Regarding%20JobSphere%20Project)
 
 ---
 
